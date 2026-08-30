@@ -15,21 +15,18 @@ Rather than relying on static averages, the pipeline combines hardware specifica
 ## Data Architecture
 The data engine ingests multi-domain raw data sources, performs multi-table JOIN transformations, and builds analytical SQL views inside BigQuery.
 
-                    DATA ARCHITECTURE
-                           │
-    ┌──────────────────────┼──────────────────────┐
-    ↓                      ↓                      ↓
-Kenya Grid Mix       AI GPU Specs         Datacenter PUE
- (EPRA Statistics)  (H100/A100/T4)         (1.15 - 1.50)
-    │                      │                      │
-    └──────────────────────┼──────────────────────┘
-                           ↓
-                   LOCAL CSV DATA
-                 (Stored in /data)
-                           ↓
-                   BIGQUERY SANDBOX
-             (`ai_carbon` dataset tables)
-                           ↓
-                 TRANSFORMED SQL VIEWS
-             (`emissions_model`, `scenario_results`,
-              `global_benchmark_comparison`)
+     ## Data Architecture
+
+The data engine ingests multi-domain raw data sources, performs multi-table JOIN transformations, and builds analytical SQL views inside BigQuery.
+
+```mermaid
+flowchart TD
+    A1[Kenya Grid Mix<br/>EPRA Statistics] --> B[LOCAL CSV DATA<br/>Stored in /data]
+    A2[AI GPU Specs<br/>H100 / A100 / T4] --> B
+    A3[Datacenter PUE<br/>1.15 - 1.50] --> B
+
+    B --> C[(BIGQUERY SANDBOX<br/>ai_carbon dataset)]
+    
+    C --> D1[emissions_model]
+    C --> D2[scenario_results]
+    C --> D3[global_benchmark_comparison]
