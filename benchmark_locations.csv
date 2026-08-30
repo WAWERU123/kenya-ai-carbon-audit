@@ -1,0 +1,6 @@
+location_code,location_name,carbon_intensity_gco2_kwh,primary_energy_source
+US_AVG,United States (National Avg),384,Gas / Coal / Renewables
+IE_AVG,Ireland (EU Data Hub),300,Gas / Wind
+IS_AVG,Iceland (Nordic Geothermal),28,Geothermal / Hydro
+KE_AVG,Kenya (Average Grid),70,Geothermal / Hydro / Wind
+KE_MARGINAL,Kenya (Thermal Peaking),650,Heavy Fuel Oil / Thermal

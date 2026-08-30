@@ -1,0 +1,4 @@
+datacenter_id,location_name,pue,pue_category,cooling_tech
+DC_EFFICIENT,Ultra-Efficient Facility,1.15,Hyperscale Best-in-Class,Direct Liquid Cooling
+DC_AVERAGE,Standard Modern Facility,1.30,Industry Average,Air-Cooled Chilled Water
+DC_LEGACY,Legacy / Tropical Air-Cooled,1.50,Higher Overhead,Standard Air Cooling
