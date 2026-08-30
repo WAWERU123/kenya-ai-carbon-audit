@@ -1,8 +1,0 @@
-fiscal_year,source_type,generation_gwh,share_percentage,is_dispatchable,is_renewable
-2024/2025,Geothermal,,39.51,true,true
-2024/2025,Hydro,,24.21,false,true
-2024/2025,Wind,,13.18,false,true
-2024/2025,Thermal,,8.62,true,false
-2024/2025,Imports,,10.60,true,false
-2024/2025,Solar,,3.27,false,true
-2024/2025,Off-grid,,0.61,true,false
