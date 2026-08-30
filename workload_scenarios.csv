@@ -1,4 +1,0 @@
-workload_id,workload_name,gpu_model,gpu_count,duration_hours,workload_type
-WL_SMALL,Small Batch Inference,NVIDIA T4,10,100,Inference
-WL_MEDIUM,Mid-Scale Model Fine-Tuning,NVIDIA A100 SXM4,64,156,Fine-Tuning
-WL_LARGE,Large Foundation Model Training,NVIDIA H100 SXM,512,195,Training
