@@ -74,7 +74,7 @@ Newer, high-efficiency GPUs (H100-class) reduce energy intensity per compute cyc
 
 ## Sample Output
 
-![total_energy_kwh by workload size](query-results-by-workload.png)
+![total_energy_kwh by workload size](total_energy_kwh%20by%20workload_id.png)
 *Total energy consumption (kWh) by workload size, from BigQuery.*
 
 ## Tech Stack
@@ -83,12 +83,6 @@ Newer, high-efficiency GPUs (H100-class) reduce energy intensity per compute cyc
 - **Query Language:** GoogleSQL
 - **Visualization:** Looker Studio
 - **Skills demonstrated:** data modeling, aggregation logic, sustainability analytics, dashboarding
-
-## What I'd Extend Next
-
-- Break down the workload-size energy jump further — is it driven more by GPU count or by runtime?
-- Run the same 322.56 kWh sample workload against a coal-heavy grid's actual emissions factor, to turn the "~80% reduction" into an absolute, side-by-side CO₂ number
-- Add a cost-per-kWh layer, so the grid advantage becomes a cost argument for data center siting, not just a sustainability one
 
 ---
 
